@@ -35,7 +35,7 @@ plot((1:ns)+base,MT_mean_25,'b-+');
 plot((1:ns)+base,MT_mean_50,'g-s');
 plot((1:ns)+base,MT_mean_75,'r-*');
 xlabel('Number of Measurements'); ylabel('Reconstruction Error');
-legend('ST','MT 25%','MT 50%', 'MT 75%',1); box on;
+legend('ST','MT 25%','MT 50%', 'MT 75%','NorthEast'); box on;
 %
 figure; hold on;
 errorbar((1:ns)+base,ST_mean,ST_std,'k-o');
@@ -45,4 +45,4 @@ errorbar((1:ns)+base,MT_mean_75,MT_std_75,'r-*');
 xlabel('Number of Measurements'); ylabel('Reconstruction Error');
 %legend('ST','MT 25%','MT 50%', 'MT 75%',1); box on;
 box on; axis([40,140,-0.2,1.5]);
-legend('ST','MT 75%',1); 
+legend('ST','MT 75%','NorthEast'); 

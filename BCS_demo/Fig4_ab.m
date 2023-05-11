@@ -30,7 +30,7 @@ hold on;
 plot(base+(1:ns)*dN,app_mean,'k-s');
 xlabel('Number of Measurements'); ylabel('Reconstruction Error');
 box on;
-legend('Random','Optimized','Approx.',1);
+legend('Random','Optimized','Approx.','NorthEast');
 % plot the variance
 figure
 errorbar(base+(1:ns)*dN,rand_mean,rand_std,'b-o');
@@ -40,4 +40,4 @@ errorbar(base+(1:ns)*dN,opt_mean,opt_std,'r-*');
 % errorbar(base+(1:ns)*dN,app_mean,app_std,'k-s');
 xlabel('Number of Measurements'); ylabel('Reconstruction Error');
 box on; axis([39,121,-0.3,1.6]);
-legend('Random','Optimized',1);
+legend('Random','Optimized','NorthEast');
